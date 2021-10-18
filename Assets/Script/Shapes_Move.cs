@@ -8,16 +8,24 @@ public class Shapes_Move : MonoBehaviour
     private Vector3[,] positionArray = new[,] {
         { new Vector3(2.25f, -0.546f, 5.859375f), new Vector3(1.125f, -1.193f, 5.859375f), new Vector3(0f,-1.84f,5.859375f), new Vector3(-1.125f,-2.487f,5.859375f), new Vector3(-2.25f,-3.1340000000000003f,5.859375f) },
         { new Vector3(2.25f,-3.1340000000000003f,5.859375f), new Vector3(1.125f,-2.487f,5.859375f), new Vector3(0f,-1.84f,5.859375f), new Vector3(-1.125f,-1.193f,5.859375f), new Vector3(-2.25f,-0.546f,5.859375f) } };
-    private GameObject[,] shapes = new GameObject[2, 3];
-    public Vector3 nextposition;
 
-    public int[] currentindex = new int[] { 0, 0 };
-    public int[] nextindex = new int[] { 0, 0 };
+    private GameObject[,] shapes = new GameObject[2, 3];
+
+
+    public Vector3[] nextposition;
+
+    public int[,] currentindex = new int[,] { { 0, 0 }, { 0, 0 }, { 0, 0 } };
+    public int[,] nextindex = new int[,] { { 0, 0 }, { 0, 0 }, { 0, 0 } };
+
     public int[] currentmove = new int[] { 0, 0 };
     public int[] nextmove = new int[] { 0, 0 };
+
     public bool is_moving = false;
-    public bool is_limit = false;
+    public bool[,] is_limit = new bool[2, 2];
+
     private Queue<int[]> moves = new Queue<int[]>();
+
+    private int k;
 
     // Start is called before the first frame update
     void Start()
@@ -30,13 +38,11 @@ public class Shapes_Move : MonoBehaviour
                 shapes[this.gameObject.transform.GetChild(i).gameObject.GetComponent<Shape_Properties>().position[0] + 1, this.gameObject.transform.GetChild(i).gameObject.GetComponent<Shape_Properties>().position[1] - 1] = this.gameObject.transform.GetChild(i).gameObject;
             }
         }
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(moves.Count);
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -84,14 +90,44 @@ public class Shapes_Move : MonoBehaviour
 
         if (currentmove[1] != 0)
         {
+            is_moving = true;
+            for (int i = 0; i < 3; i++)
+            {
+                currentindex[i, 0] = currentmove[0];
+                currentindex[i, 1] = shapes[currentmove[0], i].GetComponent<Shape_Properties>().position[1];
 
-            /*             for (int i = 0; i < 3; i++)
-                        {
-                            currentindex = new int[] { shapes[currentmove[0], i].GetComponent<Shape_Properties>().position[0], shapes[currentmove[0], i].GetComponent<Shape_Properties>().position[1] };
+                nextindex[i, 0] = currentindex[i, 0];
+                nextindex[i, 1] = currentindex[i, 1] + currentmove[1];
 
-                            nextposition = positionArray[0, shapes[0, i].GetComponent<Shape_Properties>().position[1] + 1];
-                            shapes[0, i].transform.position = Vector3.MoveTowards(shapes[0, i].transform.position, nextposition, Time.deltaTime);
-                        } */
+                /* if (nextindex[1] == 0 || nextindex[1] == 4)
+                {
+                    is_limit = true;
+                } */
+                Debug.Log(nextindex[i, 0] + "," + nextindex[i, 1]);
+                nextposition[i] = positionArray[nextindex[i, 0], nextindex[i, 1]];
+
+                shapes[currentmove[0], i].GetComponent<Shape_Properties>().position[0] = nextindex[i, 0];
+                shapes[currentmove[0], i].GetComponent<Shape_Properties>().position[1] = nextindex[i, 1];
+            }
+            currentmove = new int[] { 0, 0 };
+        }
+
+        if (is_moving == true)
+        {
+            k = 0;
+            for (int i = 0; i < 3; i++)
+            {
+                if (shapes[0, i].transform.position != nextposition[i])
+                {
+                    shapes[currentindex[i, 0], i].transform.position = Vector3.MoveTowards(shapes[0, i].transform.position, nextposition[i], Time.deltaTime);
+                    k += 1;
+                }
+            }
+            if (k == 0)
+            {
+                is_moving = false;
+                currentmove = new int[] { 0, 0 };
+            }
         }
 
     }
