@@ -11,7 +11,6 @@ public class Shapes_Move : MonoBehaviour
 
     private GameObject[,] shapes = new GameObject[2, 3];
 
-
     public Vector3[] nextposition;
 
     public int[,] currentindex = new int[,] { { 0, 0 }, { 0, 0 }, { 0, 0 } };
@@ -85,13 +84,13 @@ public class Shapes_Move : MonoBehaviour
                 if (is_moving == false)
                 {
                     currentmove = nextmove;
-
                 }
             }
         }
 
         if (currentmove[1] != 0)
         {
+            Debug.Log(currentmove[1]);
             is_moving = true;
             for (int i = 0; i < 3; i++)
             {
@@ -106,8 +105,6 @@ public class Shapes_Move : MonoBehaviour
                     is_limit = true;
                 } */
 
-                Debug.Log(nextindex[i, 0] + "," + nextindex[i, 1]);
-                Debug.Log(i);
                 nextposition[i] = positionArray[nextindex[i, 0], nextindex[i, 1]];
 
                 shapes[nextindex[i, 0], i].GetComponent<Shape_Properties>().position[0] = nextindex[i, 0];
@@ -115,24 +112,11 @@ public class Shapes_Move : MonoBehaviour
 
                 if (nextindex[i, 1] == 2)
                 {
-                    for (int j = 0; j < 3; j++)
-                    {
-                        if (shapes[Mathf.Abs(nextindex[i, 0] - 1), j].GetComponent<Shape_Properties>().position[1] == 2)
-                        {
-                            shapes[Mathf.Abs(nextindex[i, 0] - 1), j] = shapes[nextindex[i, 0], i];
-                        }
-                    }
+                    shapes[Mathf.Abs(nextindex[i, 0] - 1), 1] = shapes[nextindex[i, 0], i];
                 }
             }
             currentmove = new int[] { 0, 0 };
 
-            /*             for (int l = 0; l < 2; l++)
-                        {
-                            for (int m = 0; m < 3; m++)
-                            {
-                                Debug.Log(shapes[l, m].name + "," + l);
-                            }
-                        } */
         }
 
         if (is_moving == true)
