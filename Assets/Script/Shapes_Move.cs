@@ -43,6 +43,7 @@ public class Shapes_Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -84,6 +85,7 @@ public class Shapes_Move : MonoBehaviour
                 if (is_moving == false)
                 {
                     currentmove = nextmove;
+
                 }
             }
         }
@@ -103,13 +105,34 @@ public class Shapes_Move : MonoBehaviour
                 {
                     is_limit = true;
                 } */
+
                 Debug.Log(nextindex[i, 0] + "," + nextindex[i, 1]);
+                Debug.Log(i);
                 nextposition[i] = positionArray[nextindex[i, 0], nextindex[i, 1]];
 
-                shapes[currentmove[0], i].GetComponent<Shape_Properties>().position[0] = nextindex[i, 0];
-                shapes[currentmove[0], i].GetComponent<Shape_Properties>().position[1] = nextindex[i, 1];
+                shapes[nextindex[i, 0], i].GetComponent<Shape_Properties>().position[0] = nextindex[i, 0];
+                shapes[nextindex[i, 0], i].GetComponent<Shape_Properties>().position[1] = nextindex[i, 1];
+
+                if (nextindex[i, 1] == 2)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        if (shapes[Mathf.Abs(nextindex[i, 0] - 1), j].GetComponent<Shape_Properties>().position[1] == 2)
+                        {
+                            shapes[Mathf.Abs(nextindex[i, 0] - 1), j] = shapes[nextindex[i, 0], i];
+                        }
+                    }
+                }
             }
             currentmove = new int[] { 0, 0 };
+
+            /*             for (int l = 0; l < 2; l++)
+                        {
+                            for (int m = 0; m < 3; m++)
+                            {
+                                Debug.Log(shapes[l, m].name + "," + l);
+                            }
+                        } */
         }
 
         if (is_moving == true)
@@ -117,9 +140,9 @@ public class Shapes_Move : MonoBehaviour
             k = 0;
             for (int i = 0; i < 3; i++)
             {
-                if (shapes[0, i].transform.position != nextposition[i])
+                if (shapes[nextindex[i, 0], i].transform.position != nextposition[i])
                 {
-                    shapes[currentindex[i, 0], i].transform.position = Vector3.MoveTowards(shapes[0, i].transform.position, nextposition[i], Time.deltaTime);
+                    shapes[nextindex[i, 0], i].transform.position = Vector3.MoveTowards(shapes[nextindex[i, 0], i].transform.position, nextposition[i], Time.deltaTime);
                     k += 1;
                 }
             }
