@@ -151,7 +151,7 @@ public class Shapes_Move : MonoBehaviour
             {
                 if (shapes[nextindex[i, 0], i].transform.position != nextposition[i])
                 {
-                    shapes[nextindex[i, 0], i].transform.position = Vector3.MoveTowards(shapes[nextindex[i, 0], i].transform.position, nextposition[i], Time.deltaTime * 10);
+                    shapes[nextindex[i, 0], i].transform.position = Vector3.MoveTowards(shapes[nextindex[i, 0], i].transform.position, nextposition[i], Time.deltaTime * 15);
                     k += 1;
                 }
             }
