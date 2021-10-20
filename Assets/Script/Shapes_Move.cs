@@ -27,13 +27,20 @@ public class Shapes_Move : MonoBehaviour
 
     public int[] currentmove = new int[] { 0, 0 };
     public int[] nextmove = new int[] { 0, 0 };
+    public int[] trashmove = new int[] { 0, 0 };
 
     public bool is_moving = false;
-    public bool[,] is_limit = new bool[2, 2];
+
+    public bool[] is_limit = new bool[] { false, false };
+    public int[] is_limit_index = new int[] { 0, 0 };
 
     private Queue<int[]> moves = new Queue<int[]>();
 
     private int k;
+
+    private int l = 3;
+
+    private float smooth = 15;
 
     // Start is called before the first frame update
     void Start()
@@ -78,11 +85,16 @@ public class Shapes_Move : MonoBehaviour
             }
         }
 
-        if (moves.Count != 0)
+        if (moves.Count != 0 || nextmove[1] != 0)
         {
+
             if (nextmove[0] == currentmove[0])
             {
                 nextmove = moves.Dequeue();
+                if (is_limit[nextmove[0]] == true && (is_limit_index[nextmove[0]] + nextmove[1] > 4 || is_limit_index[nextmove[0]] + nextmove[1] < 0))
+                {
+                    nextmove = new int[] { 0, 0 };
+                }
                 if (nextmove[0] == currentmove[0] || is_moving == false)
                 {
                     currentmove = nextmove;
@@ -95,12 +107,17 @@ public class Shapes_Move : MonoBehaviour
                     currentmove = nextmove;
                 }
             }
+
+            if (is_limit[nextmove[0]] == true)
+            {
+                nextmove = new int[] { 0, 0 };
+            }
         }
 
         if (currentmove[1] != 0)
         {
-            Debug.Log(currentmove[1]);
             is_moving = true;
+            l = 0;
             for (int i = 0; i < 3; i++)
             {
                 currentindex[i, 0] = currentmove[0];
@@ -123,8 +140,24 @@ public class Shapes_Move : MonoBehaviour
                 {
                     index_save = i;
                     shapes[Mathf.Abs(nextindex[i, 0] - 1), 1] = shapes[nextindex[i, 0], i];
+                    l++;
+                }
+                else if (nextindex[i, 1] == 0 || nextindex[i, 1] == 4)
+                {
+                    is_limit[nextindex[i, 0]] = true;
+                    is_limit_index[nextindex[i, 0]] = nextindex[i, 1];
+                }
+                else
+                {
+                    l++;
                 }
             }
+
+            if (l == 3)
+            {
+                is_limit[currentmove[0]] = false;
+            }
+
 
             //switch the two gameobjects with their positions
 
@@ -151,8 +184,8 @@ public class Shapes_Move : MonoBehaviour
             {
                 if (shapes[nextindex[i, 0], i].transform.position != nextposition[i])
                 {
-                    shapes[nextindex[i, 0], i].transform.position = Vector3.MoveTowards(shapes[nextindex[i, 0], i].transform.position, nextposition[i], Time.deltaTime * 15);
-                    k += 1;
+                    shapes[nextindex[i, 0], i].transform.position = Vector3.MoveTowards(shapes[nextindex[i, 0], i].transform.position, nextposition[i], Time.deltaTime * smooth);
+                    k++;
                 }
             }
             if (k == 0)
