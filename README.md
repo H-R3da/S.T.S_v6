@@ -55,7 +55,7 @@ git clone https://github.com/R3-da/ShapeSwipe
 
 3. Change to the project directory:
    
-Open the cloned projet in the Unity Editor
+> - Open the cloned projet in the Unity Editor
 
 ---
 
