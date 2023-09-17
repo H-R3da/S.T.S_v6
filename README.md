@@ -40,12 +40,10 @@
 
 Before you begin, ensure that you have the following prerequisites installed:
 > - Unity 2020.3.20
-> - `ℹ️ ...`
 
 ### 📦 Installation
 
 1. Install the dependencies:
-
 > - Install [Unity 2020.3.20](https://unity.com/releases/editor/whats-new/2020.3.20). (This project has been developed utilizing Unity Editor version 2020.3.20. Please be advised that using alternative versions may result in compatibility issues and unexpected errors)
 
 2. Clone the ShapeSwipe repository:
@@ -54,7 +52,6 @@ git clone https://github.com/R3-da/ShapeSwipe
 ```
 
 3. Change to the project directory:
-   
 > - Open the cloned projet in the Unity Editor
 
 ---
