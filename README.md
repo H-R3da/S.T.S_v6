@@ -1,7 +1,7 @@
 # ShapeSwipe
 <div align="center">
 <h1 align="center">
-<img src="./img/app_icon_wbg.webp" width="100" />
+<img src="./img/app_icon_wbg.webp" width="50" />
 <br>ShapeSwipe
 </h1>
 <h3>◦ ShapeSwipe : Fidget & Play With Shapes.</h3>
