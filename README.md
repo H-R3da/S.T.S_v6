@@ -45,7 +45,6 @@ HTTPStatus Exception: 429
 
 ---
 
-
 ## 📂 Project Structure
 
 
@@ -53,42 +52,6 @@ HTTPStatus Exception: 429
 
 ---
 
-## 🧩 Modules
-
-<details closed><summary>Root</summary>
-
-| File                                                                                                                       | Summary                   |
-| ---                                                                                                                        | ---                       |
-| [Carpet 2.png.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\Carpet 2.png.meta)                                  | HTTPStatus Exception: 429 |
-| [GameComponent.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\GameComponent.meta)                                | HTTPStatus Exception: 429 |
-| [Scene.unity.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\Scene.unity.meta)                                    | HTTPStatus Exception: 429 |
-| [SceneSettings.lighting.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\SceneSettings.lighting.meta)              | HTTPStatus Exception: 429 |
-| [Script.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\Script.meta)                                              | HTTPStatus Exception: 429 |
-| [B.G.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\GameComponent\B.G.meta)                                      | HTTPStatus Exception: 429 |
-| [Carpet.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\GameComponent\Carpet.meta)                                | HTTPStatus Exception: 429 |
-| [Shapes.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\GameComponent\Shapes.meta)                                | HTTPStatus Exception: 429 |
-| [BG.UNITY.png.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\GameComponent\B.G\BG.UNITY.png.meta)                | HTTPStatus Exception: 429 |
-| [Target.png.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\GameComponent\B.G\Target.png.meta)                    | HTTPStatus Exception: 429 |
-| [Carpet 1.png.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\GameComponent\Carpet\Carpet 1.png.meta)             | HTTPStatus Exception: 429 |
-| [Carpet 2.png.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\GameComponent\Carpet\Carpet 2.png.meta)             | HTTPStatus Exception: 429 |
-| [Markers.png.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\GameComponent\Carpet\Markers.png.meta)               | HTTPStatus Exception: 429 |
-| [Cube_en.png.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\GameComponent\Shapes\Cube_en.png.meta)               | HTTPStatus Exception: 429 |
-| [Cylendre_en 1.png.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\GameComponent\Shapes\Cylendre_en 1.png.meta)   | HTTPStatus Exception: 429 |
-| [losange.png.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\GameComponent\Shapes\losange.png.meta)               | HTTPStatus Exception: 429 |
-| [Pentagone_en 1.png.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\GameComponent\Shapes\Pentagone_en 1.png.meta) | HTTPStatus Exception: 429 |
-| [Pyramid_en 1.png.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\GameComponent\Shapes\Pyramid_en 1.png.meta)     | HTTPStatus Exception: 429 |
-| [Shapes_Move.cs](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\Script\Shapes_Move.cs)                                 | HTTPStatus Exception: 429 |
-| [Shapes_Move.cs.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\Script\Shapes_Move.cs.meta)                       | HTTPStatus Exception: 429 |
-| [Shape_Properties.cs](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\Script\Shape_Properties.cs)                       | HTTPStatus Exception: 429 |
-| [Shape_Properties.cs.meta](https://github.com/R3-da/S.T.S_v6/blob/main/Assets\Script\Shape_Properties.cs.meta)             | HTTPStatus Exception: 429 |
-| [PackageManagerSettings.asset](https://github.com/R3-da/S.T.S_v6/blob/main/ProjectSettings\PackageManagerSettings.asset)   | HTTPStatus Exception: 429 |
-| [PresetManager.asset](https://github.com/R3-da/S.T.S_v6/blob/main/ProjectSettings\PresetManager.asset)                     | HTTPStatus Exception: 429 |
-| [VersionControlSettings.asset](https://github.com/R3-da/S.T.S_v6/blob/main/ProjectSettings\VersionControlSettings.asset)   | HTTPStatus Exception: 429 |
-| [VFXManager.asset](https://github.com/R3-da/S.T.S_v6/blob/main/ProjectSettings\VFXManager.asset)                           | HTTPStatus Exception: 429 |
-
-</details>
-
----
 
 ## 🚀 Getting Started
 
