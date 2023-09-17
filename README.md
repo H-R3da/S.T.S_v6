@@ -33,7 +33,7 @@
 ## 📍 Overview
 
 <div align="center">
-  <img src="./img/app_icon_wbg.webp/demo.gif" alt="demo.gif" />
+  <img src="./img/demo.gif" alt="demo.gif" />
 </div>
 
 ---
