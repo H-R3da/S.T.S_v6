@@ -4,7 +4,7 @@
 <img src="./img/app_icon_wbg.webp" width="100" />
 <br>ShapeSwipe
 </h1>
-<h3>◦ ShapeSwipe : Fidget & Play With Shapes</h3>
+<h3>◦ ShapeSwipe : Fidget & Play With Shapes.</h3>
 <h3>◦ Developed with the software and tools listed below.</h3>
 
 <p align="center">
