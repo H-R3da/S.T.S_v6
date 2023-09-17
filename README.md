@@ -33,7 +33,7 @@
 ## 📍 Overview
 
 <div align="center">
-  <img src="./img/demo.gif" alt="demo.gif" width="100"/>
+  <img src="./img/demo.gif" alt="demo.gif" width="200"/>
 </div>
 
 ---
