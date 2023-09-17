@@ -32,6 +32,10 @@
 
 ## 📍 Overview
 
+<p align="center">
+  <img src="./img/app_icon_wbg.webp/demo.gif" alt="demo.gif" />
+</p>
+
 ---
 
 ## 🚀 Getting Started
