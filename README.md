@@ -4,7 +4,7 @@
 <img src="./img/app_icon_wbg.webp" width="100" />
 <br>S.T.S_v6
 </h1>
-<h3>◦ HTTPStatus Exception: 429</h3>
+<h3>◦ ShapeSwipe : Fidget & Play With Shapes</h3>
 <h3>◦ Developed with the software and tools listed below.</h3>
 
 <p align="center">
