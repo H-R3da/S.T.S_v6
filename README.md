@@ -21,9 +21,7 @@
 ## 📒 Table of Contents
 - [📒 Table of Contents](#-table-of-contents)
 - [📍 Overview](#-overview)
-- [⚙️ Features](#-features)
 - [📂 Project Structure](#project-structure)
-- [🧩 Modules](#modules)
 - [🚀 Getting Started](#-getting-started)
 - [🗺 Roadmap](#-roadmap)
 - [🤝 Contributing](#-contributing)
@@ -35,13 +33,6 @@
 
 ## 📍 Overview
 
-HTTPStatus Exception: 429
-
----
-
-## ⚙️ Features
-
-HTTPStatus Exception: 429
 
 ---
 
@@ -81,11 +72,6 @@ cd S.T.S_v6
 
 ### 🎮 Using S.T.S_v6
 
-```sh
-`ℹ️  INSERT-DESCRIPTION`
-```
-
-### 🧪 Running Tests
 ```sh
 `ℹ️  INSERT-DESCRIPTION`
 ```
