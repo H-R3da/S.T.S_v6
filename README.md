@@ -67,7 +67,7 @@ cd ShapeSwipe
 
 3. Install the dependencies:
 ```sh
-`ℹ️  INSERT-DESCRIPTION`
+This project has been developed utilizing Unity Editor version 2020.3.20. Please be advised that using alternative versions may result in compatibility issues and unexpected errors
 ```
 
 ### 🎮 Using ShapeSwipe
