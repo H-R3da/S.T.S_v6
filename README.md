@@ -8,7 +8,7 @@
 <h3>◦ Developed with the software and tools listed below.</h3>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Meta-0467DF.svg?style&logo=Unity&logoColor=white" alt="Unity" />
+<img src="https://img.shields.io/badge/Unity-0467DF.svg?style&logo=Unity&logoColor=white" alt="Unity" />
 </p>
 <img src="https://img.shields.io/github/languages/top/R3-da/S.T.S_v6?style&color=5D6D7E" alt="GitHub top language" />
 <img src="https://img.shields.io/github/languages/code-size/R3-da/S.T.S_v6?style&color=5D6D7E" alt="GitHub code size in bytes" />
