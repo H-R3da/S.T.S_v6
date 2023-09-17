@@ -49,8 +49,7 @@
 ### ✔️ Prerequisites
 
 Before you begin, ensure that you have the following prerequisites installed:
-> - `ℹ️ Requirement 1`
-> - `ℹ️ Requirement 2`
+> - Unity 2020.3.20
 > - `ℹ️ ...`
 
 ### 📦 Installation
