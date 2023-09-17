@@ -121,6 +121,6 @@ This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LI
 
 ## 👏 Acknowledgments
 
-> - This project idea was mainly inspired by Color Switch using shapes instead of colors.
+> - The project idea was mainly inspired by Color Switch using shapes instead of colors.
 
 ---
