@@ -1,7 +1,7 @@
 # S.T.S_v6
 <div align="center">
 <h1 align="center">
-<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" />
+<img src="./img/app_icon_wbg.webp" width="100" />
 <br>S.T.S_v6
 </h1>
 <h3>◦ HTTPStatus Exception: 429</h3>
