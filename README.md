@@ -62,9 +62,7 @@ Open the cloned projet in the Unity Editor
 
 ### 🎮 Using ShapeSwipe
 
-```sh
-`ℹ️  INSERT-DESCRIPTION`
-```
+For now, ShapeSwipe represents an endlessly engaging fidgeting game, devoid of specific objectives, scores, or defined goals. It offers a satisfying experience, allowing players to freely enjoy the act of shape-swiping.
 
 ---
 
