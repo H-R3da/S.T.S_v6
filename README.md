@@ -95,8 +95,10 @@ cd S.T.S_v6
 
 ## 🗺 Roadmap
 
-> - [X] `ℹ️  Task 1: Implement X`
-> - [ ] `ℹ️  Task 2: Refactor Y`
+> - [X] `ℹ️  Build Playable Prototype With No Obstacles`
+> - [ ] `ℹ️  Add Random Falling Mussels`
+> - [ ] `ℹ️  Add Score Logic`
+> - [ ] Build Main Menu UI
 > - [ ] `ℹ️ ...`
 
 
