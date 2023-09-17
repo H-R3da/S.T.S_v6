@@ -1,4 +1,4 @@
-# S.T.S_v6
+# ShapeSwipe
 <div align="center">
 <h1 align="center">
 <img src="./img/app_icon_wbg.webp" width="100" />
@@ -10,10 +10,10 @@
 <p align="center">
 <img src="https://img.shields.io/badge/Unity-0467DF.svg?style&logo=Unity&logoColor=white" alt="Unity" />
 </p>
-<img src="https://img.shields.io/github/languages/top/R3-da/S.T.S_v6?style&color=5D6D7E" alt="GitHub top language" />
-<img src="https://img.shields.io/github/languages/code-size/R3-da/S.T.S_v6?style&color=5D6D7E" alt="GitHub code size in bytes" />
-<img src="https://img.shields.io/github/commit-activity/m/R3-da/S.T.S_v6?style&color=5D6D7E" alt="GitHub commit activity" />
-<img src="https://img.shields.io/github/license/R3-da/S.T.S_v6?style&color=5D6D7E" alt="GitHub license" />
+<img src="https://img.shields.io/github/languages/top/R3-da/ShapeSwipe?style&color=5D6D7E" alt="GitHub top language" />
+<img src="https://img.shields.io/github/languages/code-size/R3-da/ShapeSwipe?style&color=5D6D7E" alt="GitHub code size in bytes" />
+<img src="https://img.shields.io/github/commit-activity/m/R3-da/ShapeSwipe?style&color=5D6D7E" alt="GitHub commit activity" />
+<img src="https://img.shields.io/github/license/R3-da/ShapeSwipe?style&color=5D6D7E" alt="GitHub license" />
 </div>
 
 ---
@@ -55,14 +55,14 @@ Before you begin, ensure that you have the following prerequisites installed:
 
 ### 📦 Installation
 
-1. Clone the S.T.S_v6 repository:
+1. Clone the ShapeSwipe repository:
 ```sh
-git clone https://github.com/R3-da/S.T.S_v6
+git clone https://github.com/R3-da/ShapeSwipe
 ```
 
 2. Change to the project directory:
 ```sh
-cd S.T.S_v6
+cd ShapeSwipe
 ```
 
 3. Install the dependencies:
@@ -70,7 +70,7 @@ cd S.T.S_v6
 `ℹ️  INSERT-DESCRIPTION`
 ```
 
-### 🎮 Using S.T.S_v6
+### 🎮 Using ShapeSwipe
 
 ```sh
 `ℹ️  INSERT-DESCRIPTION`
