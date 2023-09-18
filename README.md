@@ -73,7 +73,6 @@ For now, ShapeSwipe represents an endlessly engaging fidgeting game, devoid of s
 > - [ ] Add Random Falling Mussels
 > - [ ] Add Score Logic
 > - [ ] Build Main Menu UI
-> - [ ] `ℹ️ ...`
 
 ---
 
